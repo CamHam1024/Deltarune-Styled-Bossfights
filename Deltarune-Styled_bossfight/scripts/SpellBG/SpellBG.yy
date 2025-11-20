@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"SpellBG",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SpellBG",
+  "parent":{
+    "name":"Backgrounds",
+    "path":"folders/Scripts/Backgrounds.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

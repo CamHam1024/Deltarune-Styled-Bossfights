@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"HUDBG",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"HUDBG",
+  "parent":{
+    "name":"Backgrounds",
+    "path":"folders/Scripts/Backgrounds.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

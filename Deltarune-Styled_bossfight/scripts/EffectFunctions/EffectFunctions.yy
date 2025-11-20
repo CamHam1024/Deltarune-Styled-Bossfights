@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"EffectFunctions",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"EffectFunctions",
+  "parent":{
+    "name":"Backgrounds",
+    "path":"folders/Scripts/Backgrounds.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
