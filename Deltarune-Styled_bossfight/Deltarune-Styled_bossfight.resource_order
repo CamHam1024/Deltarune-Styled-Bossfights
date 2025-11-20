@@ -36,6 +36,7 @@
     {"name":"Timelines","order":10,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"Notes to test Github","order":17,"path":"notes/Notes to test Github/Notes to test Github.yy",},
     {"name":"obj_Debug","order":1,"path":"objects/obj_Debug/obj_Debug.yy",},
     {"name":"obj_DeltaruneStuff","order":1,"path":"objects/obj_DeltaruneStuff/obj_DeltaruneStuff.yy",},
     {"name":"obj_HUD","order":2,"path":"objects/obj_HUD/obj_HUD.yy",},

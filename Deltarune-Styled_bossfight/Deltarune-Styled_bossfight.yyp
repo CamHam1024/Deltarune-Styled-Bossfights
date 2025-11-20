@@ -61,6 +61,7 @@
   "resources":[
     {"id":{"name":"fnt_System","path":"fonts/fnt_System/fnt_System.yy",},},
     {"id":{"name":"Hedge Read this","path":"notes/Hedge Read this/Hedge Read this.yy",},},
+    {"id":{"name":"Notes to test Github","path":"notes/Notes to test Github/Notes to test Github.yy",},},
     {"id":{"name":"obj_BadHeart","path":"objects/obj_BadHeart/obj_BadHeart.yy",},},
     {"id":{"name":"obj_Debug","path":"objects/obj_Debug/obj_Debug.yy",},},
     {"id":{"name":"obj_DeltaruneStuff","path":"objects/obj_DeltaruneStuff/obj_DeltaruneStuff.yy",},},
