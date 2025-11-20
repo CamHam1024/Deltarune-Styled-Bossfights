@@ -1,6 +1,6 @@
 {
   "$GMProject":"v1",
-  "%Name":"Deltarune-Styled_bossfight",
+  "%Name":"Deltarune-Bossfight-Base",
   "AudioGroups":[
     {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
@@ -57,7 +57,7 @@
   "MetaData":{
     "IDEVersion":"2024.14.1.210",
   },
-  "name":"Deltarune-Styled_bossfight",
+  "name":"Deltarune-Bossfight-Base",
   "resources":[
     {"id":{"name":"fnt_System","path":"fonts/fnt_System/fnt_System.yy",},},
     {"id":{"name":"Hedge Read this","path":"notes/Hedge Read this/Hedge Read this.yy",},},
