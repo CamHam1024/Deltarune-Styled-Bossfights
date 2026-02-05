@@ -8,7 +8,7 @@ angle = 0
 
 #macro Res_W 1920
 #macro Res_H 1080
-#macro Res_Scale 0.75
+#macro Res_Scale 1
 
 #macro Cam_Smooth 0.1
 
@@ -36,3 +36,7 @@ var window_width = Res_W * Res_Scale;
 var window_height = Res_H * Res_Scale;
 
 window_set_position(display_width/2 - window_width/2, display_height/2 - window_height/2);
+
+//Mouse Previous for panning
+mouse_x_prev = device_mouse_x_to_gui(0);
+mouse_y_prev = device_mouse_y_to_gui(0);
