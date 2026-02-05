@@ -8,7 +8,7 @@ angle = 0
 
 #macro Res_W 1920
 #macro Res_H 1080
-#macro Res_Scale 1
+#macro Res_Scale 0.75
 
 #macro Cam_Smooth 0.1
 
