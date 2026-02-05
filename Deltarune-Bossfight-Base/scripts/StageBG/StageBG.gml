@@ -30,11 +30,11 @@ function StageBG_MiddyLabAlt() //Middy Lab
 	//Draw code
 	ABGmove += 0.3 * global.WorldSpeed;
 	
-	var Col = make_color_hsv(200,255,150)
+	var Col = make_color_hsv(200,0,255)
     var Col2 = make_color_hsv(200,255,50)
 	
 	//draw solid
-	draw_rectangle_color(0, 0, 1920, 1080, Col, Col, Col2, Col2, 0);
+	draw_rectangle_color(0, 0, room_width, room_height, Col, Col, Col2, Col2, 0);
 	
 	//set blendmode so that the alpha is displayed correctly
 	gpu_set_colorwriteenable(true, true, true, false)

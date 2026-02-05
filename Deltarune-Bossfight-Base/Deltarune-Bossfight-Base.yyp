@@ -55,7 +55,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.1.210",
+    "IDEVersion":"2024.14.3.217",
   },
   "name":"Deltarune-Bossfight-Base",
   "resources":[
@@ -78,11 +78,13 @@
     {"id":{"name":"obj_TestSpawner","path":"objects/obj_TestSpawner/obj_TestSpawner.yy",},},
     {"id":{"name":"obj_TimeSlow","path":"objects/obj_TimeSlow/obj_TimeSlow.yy",},},
     {"id":{"name":"obj_Twoface","path":"objects/obj_Twoface/obj_Twoface.yy",},},
+    {"id":{"name":"obj_VeiwTinkering","path":"objects/obj_VeiwTinkering/obj_VeiwTinkering.yy",},},
     {"id":{"name":"obj_Wall","path":"objects/obj_Wall/obj_Wall.yy",},},
     {"id":{"name":"Sbleven","path":"objects/Sbleven/Sbleven.yy",},},
     {"id":{"name":"rm_FunRoom","path":"rooms/rm_FunRoom/rm_FunRoom.yy",},},
     {"id":{"name":"rm_HedgeLab","path":"rooms/rm_HedgeLab/rm_HedgeLab.yy",},},
-    {"id":{"name":"rm_Main","path":"rooms/rm_Main/rm_Main.yy",},},
+    {"id":{"name":"rm_Mainbak","path":"rooms/rm_Mainbak/rm_Mainbak.yy",},},
+    {"id":{"name":"rm_MainRoom","path":"rooms/rm_MainRoom/rm_MainRoom.yy",},},
     {"id":{"name":"rm_MiddyLab","path":"rooms/rm_MiddyLab/rm_MiddyLab.yy",},},
     {"id":{"name":"EffectFunctions","path":"scripts/EffectFunctions/EffectFunctions.yy",},},
     {"id":{"name":"HUDBG","path":"scripts/HUDBG/HUDBG.yy",},},
@@ -120,7 +122,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rm_Main","path":"rooms/rm_Main/rm_Main.yy",},},
+    {"roomId":{"name":"rm_MainRoom","path":"rooms/rm_MainRoom/rm_MainRoom.yy",},},
+    {"roomId":{"name":"rm_Mainbak","path":"rooms/rm_Mainbak/rm_Mainbak.yy",},},
     {"roomId":{"name":"rm_HedgeLab","path":"rooms/rm_HedgeLab/rm_HedgeLab.yy",},},
     {"roomId":{"name":"rm_MiddyLab","path":"rooms/rm_MiddyLab/rm_MiddyLab.yy",},},
     {"roomId":{"name":"rm_FunRoom","path":"rooms/rm_FunRoom/rm_FunRoom.yy",},},

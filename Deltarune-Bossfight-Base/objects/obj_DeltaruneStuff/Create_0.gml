@@ -21,15 +21,13 @@ if (global.SoulMode = 1){global.SoulColour = 170}
 
 #endregion
 
-figtArea = instance_create_depth(1920/2, 1080/2, 0, obj_PlayArea);
-figtArea.xsize = 400;
-figtArea.ysize = 400;
+figtArea = instance_create_depth(room_width/2, room_height/2, 0, obj_PlayArea);
+figtArea.xsize = 500;
+figtArea.ysize = 500;
 
 //instance_create_depth(1920/2-100, 1080/2-300, -2, obj_TestSpawner);
 //instance_create_depth(1920/2+100, 1080/2-300, -2, obj_TestSpawner);
 
-PlaySoul = instance_create_depth(400, 1080/2, -2, obj_PlayInandOut);
-PlaySoul.destPosX = 1920/2-150;
-PlaySoul.destPosY = 1080/2;
-
-instance_create_depth(1920/2, 1080/2, -3, obj_LightEmitt)
+PlaySoul = instance_create_depth(400, room_height/2, -2, obj_PlayInandOut);
+PlaySoul.destPosX = room_width/2;
+PlaySoul.destPosY = room_height/2;

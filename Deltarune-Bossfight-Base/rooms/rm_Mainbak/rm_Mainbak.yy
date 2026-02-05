@@ -1,14 +1,14 @@
 {
   "$GMRoom":"v1",
-  "%Name":"rm_Main",
+  "%Name":"rm_Mainbak",
   "creationCodeFile":"",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_48195408","path":"rooms/rm_Main/rm_Main.yy",},
-    {"name":"inst_2D6A70EA","path":"rooms/rm_Main/rm_Main.yy",},
-    {"name":"inst_41C4D272","path":"rooms/rm_Main/rm_Main.yy",},
+    {"name":"inst_41C4D272","path":"rooms/rm_Mainbak/rm_Mainbak.yy",},
+    {"name":"inst_2D6A70EA","path":"rooms/rm_Mainbak/rm_Mainbak.yy",},
+    {"name":"inst_48195408","path":"rooms/rm_Mainbak/rm_Mainbak.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -20,7 +20,7 @@
     {"$GMRBackgroundLayer":"","%Name":"EnhancementAid","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"EnhancementAid","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"spr_FakeBG","path":"sprites/spr_FakeBG/spr_FakeBG.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":false,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
     {"$GMRBackgroundLayer":"","%Name":"Backgrounds_1","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Backgrounds_1","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
-  "name":"rm_Main",
+  "name":"rm_Mainbak",
   "parent":{
     "name":"Rooms",
     "path":"folders/Rooms.yy",
