@@ -31,7 +31,7 @@ function StageBG_MiddyLabAlt() //Middy Lab
 	ABGmove += 0.3 * global.WorldSpeed;
 	
 	var Col = make_color_hsv(200,0,255)
-    var Col2 = make_color_hsv(200,255,50)
+    var Col2 = make_color_hsv(200,200,150)
 	
 	//draw solid
 	draw_rectangle_color(0, 0, room_width, room_height, Col, Col, Col2, Col2, 0);

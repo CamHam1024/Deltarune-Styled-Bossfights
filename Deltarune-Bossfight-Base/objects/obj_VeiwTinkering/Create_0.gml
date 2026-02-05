@@ -17,7 +17,8 @@ view_enabled = true;
 view_visible[0] = true;
 
 //Create Camera
-camera = camera_create_view(0, 0, Res_W, Res_H);
+Spinning = 0
+camera = camera_create_view(room_width/2, room_height/2, Res_W, Res_H, 0);
 
 view_set_camera(0, camera);
 
