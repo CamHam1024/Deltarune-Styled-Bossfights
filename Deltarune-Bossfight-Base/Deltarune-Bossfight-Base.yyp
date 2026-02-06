@@ -79,6 +79,7 @@
     {"id":{"name":"rm_Mainbak","path":"rooms/rm_Mainbak/rm_Mainbak.yy",},},
     {"id":{"name":"rm_MainRoom","path":"rooms/rm_MainRoom/rm_MainRoom.yy",},},
     {"id":{"name":"rm_MiddyLab","path":"rooms/rm_MiddyLab/rm_MiddyLab.yy",},},
+    {"id":{"name":"cameraFunctions","path":"scripts/cameraFunctions/cameraFunctions.yy",},},
     {"id":{"name":"EffectFunctions","path":"scripts/EffectFunctions/EffectFunctions.yy",},},
     {"id":{"name":"HUDBG","path":"scripts/HUDBG/HUDBG.yy",},},
     {"id":{"name":"SpellBG","path":"scripts/SpellBG/SpellBG.yy",},},

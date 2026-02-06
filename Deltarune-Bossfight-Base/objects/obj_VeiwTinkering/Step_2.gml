@@ -5,7 +5,7 @@ var camW = camera_get_view_width(camera);
 var camH = camera_get_view_height(camera);
 
 //panning
-if (mouse_check_button(mb_middle))
+if (mouse_check_button(mb_left))
 {
 	var move_x = device_mouse_x_to_gui(0) - mouse_x_prev;
 	var move_y = device_mouse_y_to_gui(0) - mouse_y_prev;
@@ -59,10 +59,11 @@ if (wheel != 0)
 
 
 //Add to size
+var addW = camW * zoomrate;
+var addH = camH * zoomrate;
+	
 if (zoomtime != 0)
 {
-	var addW = camW * zoomrate;
-	var addH = camH * zoomrate;
 	
 	camW += addW;
 	camH += addH;
@@ -74,10 +75,13 @@ if (zoomtime != 0)
 	zoomtime -= 1
 }
 
-if keyboard_check_pressed(ord("K"))
+if (zoomMinMax < 1)
 {
-	zoomtime = 30
-	zoomrate = 0.01
+	if keyboard_check_pressed(ord("K"))
+	{
+		zoomtime = 30
+		zoomrate = 0.01
+	}
 }
 if keyboard_check_pressed(ord("L"))
 {

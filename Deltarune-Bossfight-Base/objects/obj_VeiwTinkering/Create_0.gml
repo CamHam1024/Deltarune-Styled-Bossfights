@@ -13,6 +13,7 @@ MoveVariable = 0
 angle = 0;
 zoomrate = 0;
 zoomtime = 0;
+zoomMinMax = 1;
 
 wheel = 0;
 
