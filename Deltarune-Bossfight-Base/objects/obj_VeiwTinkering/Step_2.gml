@@ -59,23 +59,30 @@ if (wheel != 0)
 
 
 //Add to size
-var addW = camW * zoom;
-var addH = camH * zoom;
+if (zoomtime != 0)
+{
+	var addW = camW * zoom;
+	var addH = camH * zoom;
 	
-camW += addW;
-camH += addH;
+	camW = lerp(camW, addW, 0.1);
+	camH = lerp(camH, addH, 0.1);
 	
-//Position
-camX -= addW;
-camY -= addH;
+	//Position
+	camX -= addW / 2;
+	camY -= addH / 2;
 	
+	zoomtime -= 1
+}
+
 if keyboard_check_pressed(ord("K"))
 {
-	zoom += 0.01
+	zoomtime = 30
+	zoom = 0.01
 }
 if keyboard_check_pressed(ord("L"))
 {
-	zoom -= 0.01
+	zoomtime = 30
+	zoom = -0.01
 }
 
 //Apply cam Pos
