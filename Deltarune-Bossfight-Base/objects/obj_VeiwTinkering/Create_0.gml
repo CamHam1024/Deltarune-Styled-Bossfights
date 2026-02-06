@@ -11,9 +11,9 @@ MoveVariable = 0
 #macro Cam_Smooth 0.1
 
 angle = 0;
-zoom = 0;
+zoomrate = 0;
 zoomtime = 0;
-zoomFactor = 0 
+
 wheel = 0;
 
 //Enable veiws
