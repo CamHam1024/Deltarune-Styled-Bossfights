@@ -6,7 +6,7 @@ function StageBG_MiddyLab(moveVar) //Middy Lab
 	var Col = make_color_hsv(70,255,30)
 	
 	//draw solid
-	draw_rectangle_color(0, 0, 1920, 1080, Col, Col, c_black, c_black, 0); //creates a black background for testing!
+	draw_rectangle_color(0, 0, room_width, room_height, Col, Col, c_black, c_black, 0); //creates a black background for testing!
 	
 	//set blendmode so that the alpha is displayed correctly
 	gpu_set_colorwriteenable(true, true, true, false)

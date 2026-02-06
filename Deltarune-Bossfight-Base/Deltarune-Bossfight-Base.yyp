@@ -51,6 +51,7 @@
   },
   "name":"Deltarune-Bossfight-Base",
   "resources":[
+    {"id":{"name":"fnt_System_1","path":"fonts/fnt_System_1/fnt_System_1.yy",},},
     {"id":{"name":"fnt_System","path":"fonts/fnt_System/fnt_System.yy",},},
     {"id":{"name":"Hedge Read this","path":"notes/Hedge Read this/Hedge Read this.yy",},},
     {"id":{"name":"Notes to test Github","path":"notes/Notes to test Github/Notes to test Github.yy",},},

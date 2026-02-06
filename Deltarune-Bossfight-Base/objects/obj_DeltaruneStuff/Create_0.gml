@@ -22,8 +22,8 @@ if (global.SoulMode = 1){global.SoulColour = 170}
 #endregion
 
 figtArea = instance_create_depth(room_width/2, room_height/2, 0, obj_PlayArea);
-figtArea.xsize = 500;
-figtArea.ysize = 500;
+figtArea.xsize = 300;
+figtArea.ysize = 300;
 
 //instance_create_depth(1920/2-100, 1080/2-300, -2, obj_TestSpawner);
 //instance_create_depth(1920/2+100, 1080/2-300, -2, obj_TestSpawner);

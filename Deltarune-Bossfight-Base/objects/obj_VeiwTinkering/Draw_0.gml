@@ -1,4 +1,5 @@
 #region test background
-StageBG_MiddyLabAlt();
+StageBG_MiddyLab(MoveVariable);
+MoveVariable += 1;
 #endregion
 

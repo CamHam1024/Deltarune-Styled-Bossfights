@@ -34,10 +34,54 @@ else
 	camY = lerp(camY, targetY, Cam_Smooth);	
 }
 
+//Zooming
+#region Example (Mouse scroll)
+/*wheel = mouse_wheel_down() - mouse_wheel_up();
+
+if (wheel != 0)
+{
+	wheel *= 0.5	
+	
+	//Add to size
+	var addW = camW * wheel;
+	var addH = camH * wheel;
+	
+	camW += addW;
+	camH += addH;
+	
+	//Position
+	camX -= addW / 2;
+	camY -= addH / 2;
+}*/
+#endregion
+
+//wheel = mouse_wheel_down() - mouse_wheel_up();
+
+
+//Add to size
+var addW = camW * zoom;
+var addH = camH * zoom;
+	
+camW += addW;
+camH += addH;
+	
+//Position
+camX -= addW;
+camY -= addH;
+	
+if keyboard_check_pressed(ord("K"))
+{
+	zoom += 0.01
+}
+if keyboard_check_pressed(ord("L"))
+{
+	zoom -= 0.01
+}
+
 //Apply cam Pos
 camera_set_view_pos(camera, camX, camY);
 camera_set_view_size(camera, camW, camH)
-camera_set_view_angle(camera, Spinning);
+camera_set_view_angle(camera, angle);
 
 //Spinning += 0.1
 

@@ -1,8 +1,8 @@
 {
   "FolderOrderSettings":[
-    {"name":"Fonts","order":9,"path":"folders/Fonts.yy",},
-    {"name":"Hedge Experiments!","order":16,"path":"folders/Hedge Experiments!.yy",},
-    {"name":"Notes","order":13,"path":"folders/Notes.yy",},
+    {"name":"Fonts","order":6,"path":"folders/Fonts.yy",},
+    {"name":"Hedge Experiments!","order":8,"path":"folders/Hedge Experiments!.yy",},
+    {"name":"Notes","order":7,"path":"folders/Notes.yy",},
     {"name":"Objects","order":2,"path":"folders/Objects.yy",},
     {"name":"Experiment Objects","order":2,"path":"folders/Objects/Experiment Objects.yy",},
     {"name":"Deltachicken","order":4,"path":"folders/Objects/Experiment Objects/Deltachicken.yy",},
@@ -17,7 +17,7 @@
     {"name":"Scripts","order":3,"path":"folders/Scripts.yy",},
     {"name":"Experimental Scrips","order":1,"path":"folders/Scripts/Experimental Scrips.yy",},
     {"name":"Useful Stuff","order":2,"path":"folders/Scripts/Useful Stuff.yy",},
-    {"name":"Sounds","order":6,"path":"folders/Sounds.yy",},
+    {"name":"Sounds","order":5,"path":"folders/Sounds.yy",},
     {"name":"Experimental Sounds","order":1,"path":"folders/Sounds/Experimental Sounds.yy",},
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"Experimental sprite","order":2,"path":"folders/Sprites/Experimental sprite.yy",},
@@ -28,7 +28,7 @@
     {"name":"TalkSprites","order":3,"path":"folders/Sprites/TalkSprites.yy",},
   ],
   "ResourceOrderSettings":[
-    {"name":"Notes to test Github","order":17,"path":"notes/Notes to test Github/Notes to test Github.yy",},
+    {"name":"fnt_System_1","order":1,"path":"fonts/fnt_System_1/fnt_System_1.yy",},
     {"name":"obj_Debug","order":1,"path":"objects/obj_Debug/obj_Debug.yy",},
     {"name":"obj_DeltaruneStuff","order":1,"path":"objects/obj_DeltaruneStuff/obj_DeltaruneStuff.yy",},
     {"name":"obj_HUD","order":2,"path":"objects/obj_HUD/obj_HUD.yy",},

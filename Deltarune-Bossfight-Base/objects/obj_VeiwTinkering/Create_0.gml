@@ -4,20 +4,23 @@
 MoveVariable = 0
 
 //veiw Variables
-angle = 0
-
 #macro Res_W 1920
 #macro Res_H 1080
 #macro Res_Scale 1
 
 #macro Cam_Smooth 0.1
 
+angle = 0;
+zoom = 1;
+zoomtime = 0;
+zoomFactor = 0 
+wheel = 0;
+
 //Enable veiws
 view_enabled = true;
 view_visible[0] = true;
 
 //Create Camera
-Spinning = 0
 camera = camera_create_view(room_width/2, room_height/2, Res_W, Res_H, 0);
 
 view_set_camera(0, camera);
