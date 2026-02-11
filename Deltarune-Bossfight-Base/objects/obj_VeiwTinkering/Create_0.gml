@@ -11,7 +11,7 @@ MoveVariable = 0
 #macro Cam_Smooth 0.1
 
 angle = 0;
-zoomrate = 0;
+zoomrate = 1;
 zoomtime = 0;
 zoomMinMax = 1;
 
@@ -44,3 +44,6 @@ window_set_position(display_width/2 - window_width/2, display_height/2 - window_
 //Mouse Previous for panning
 mouse_x_prev = device_mouse_x_to_gui(0);
 mouse_y_prev = device_mouse_y_to_gui(0);
+
+camWStart = camera_get_view_width(camera);
+camHStart = camera_get_view_height(camera);

@@ -64,7 +64,6 @@ var addH = camH * zoomrate;
 	
 if (zoomtime != 0)
 {
-	
 	camW += addW;
 	camH += addH;
 	
@@ -73,6 +72,7 @@ if (zoomtime != 0)
 	camY -= addH / 2;
 	
 	zoomtime -= 1
+	zoomMinMax += zoomrate
 }
 
 if (zoomMinMax < 1)
@@ -82,7 +82,11 @@ if (zoomMinMax < 1)
 		zoomtime = 30
 		zoomrate = 0.01
 	}
+}else if(zoomMinMax > 1)
+{
+	zoomMinMax = 1	
 }
+
 if keyboard_check_pressed(ord("L"))
 {
 	zoomtime = 30
