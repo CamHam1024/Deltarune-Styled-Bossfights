@@ -29,7 +29,7 @@ if (keyboard_check_pressed(ord("T")))
 if (DisplayText == true)
 {
 	//Debug Text and values
-	draw_text(25, 50, "Current Room: " + room_get_name(room) + "\n" + "\nDebug Settings Enabled. Press ESC to exit. \nNum 1: Main Game Room.\nNum 2: Middy's Test Lab.\nNum 3: Hedge's Test Lab.");
+	draw_text(25, 50, "Current Room: " + room_get_name(room) + "\n" + "\nDebug Settings Enabled. Press ESC to exit. | 1: Main Game Room. | 2: Middy's Test Lab. | 3: Hedge's Test Lab.");
 	draw_text(25, 50, "\n\n\n\n\n\n\n\nPlayable Area:" + "\nX1: " + string(global.PlayAreaX1) + "\n" + "X2:" + string(global.PlayAreaX2) + "\n" 
 	+ "Y1: " + string(global.PlayAreaY1) + "\n" + "Y2: " + string(global.PlayAreaY2));
 	

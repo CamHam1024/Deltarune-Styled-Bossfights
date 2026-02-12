@@ -1,7 +1,7 @@
 //General
 //Window Variables
-Res_W = display_get_width();
-Res_H = display_get_height();
+Res_W = 1920//display_get_width();
+Res_H = 1080//display_get_height();
 Res_Scale = 0.8
 
 Cam_Smooth = 0.1
@@ -42,8 +42,6 @@ wheel = 0;
 
 //Background Variables
 MoveVariable = 0;
-
-
 
 //Mouse Previous for panning
 mouse_x_prev = device_mouse_x_to_gui(0);
