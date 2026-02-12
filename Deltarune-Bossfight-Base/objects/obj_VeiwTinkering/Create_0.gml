@@ -4,28 +4,10 @@ Res_W = display_get_width();
 Res_H = display_get_height();
 Res_Scale = 0.8
 
-<<<<<<< Updated upstream
 Cam_Smooth = 0.1
-=======
+
 //background variables
 MoveVariable = 0
-
-//veiw Variables
-#macro Res_W 1920
-#macro Res_H 1080
-#macro Res_Scale 1
-
-#macro Cam_Smooth 0.1
-
-angle = 0;
-zoomrate = 1;
-zoomtime = 0;
-zoomMinMax = 1;
-
-Zooming = false;
-
-wheel = 0;
->>>>>>> Stashed changes
 
 //Enable veiws
 view_enabled = true;
@@ -53,6 +35,8 @@ angle = 0;
 zoomrate = 1;
 zoomtime = 0;
 zoomMinMax = 1;
+
+Zooming = false
 
 wheel = 0;
 
