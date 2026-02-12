@@ -1,21 +1,10 @@
 //General
+//Window Variables
+Res_W = display_get_width();
+Res_H = display_get_height();
+Res_Scale = 0.8
 
-//background variables
-MoveVariable = 0
-
-//veiw Variables
-#macro Res_W 1920
-#macro Res_H 1080
-#macro Res_Scale 1
-
-#macro Cam_Smooth 0.1
-
-angle = 0;
-zoomrate = 1;
-zoomtime = 0;
-zoomMinMax = 1;
-
-wheel = 0;
+Cam_Smooth = 0.1
 
 //Enable veiws
 view_enabled = true;
@@ -33,13 +22,21 @@ surface_resize(application_surface, Res_W * Res_Scale, Res_H * Res_Scale);
 display_set_gui_size(Res_W, Res_H); // gui size
 
 //Center window
-var display_width = display_get_width();
-var display_height = display_get_height();
+window_width = Res_W * Res_Scale;
+window_height = Res_H * Res_Scale;
 
-var window_width = Res_W * Res_Scale;
-var window_height = Res_H * Res_Scale;
+window_set_position(Res_W/2 - window_width/2, Res_H/2 - window_height/2);
 
-window_set_position(display_width/2 - window_width/2, display_height/2 - window_height/2);
+//General Varaiables
+angle = 0;
+zoomrate = 1;
+zoomtime = 0;
+zoomMinMax = 1;
+
+wheel = 0;
+
+//Background Variables
+MoveVariable = 0;
 
 //Mouse Previous for panning
 mouse_x_prev = device_mouse_x_to_gui(0);
