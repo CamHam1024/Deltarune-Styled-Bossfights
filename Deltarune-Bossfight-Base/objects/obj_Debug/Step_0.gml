@@ -10,7 +10,7 @@ if (keyboard_check_pressed(vk_escape))
 //Special rooms
 if (keyboard_check_pressed(ord("1")))
 {
-	room_goto(rm_Mainbak);
+	room_goto(rm_MainRoom);
 }
 
 if (keyboard_check_pressed(ord("2")))

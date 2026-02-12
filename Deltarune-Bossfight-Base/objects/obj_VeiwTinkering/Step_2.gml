@@ -1,46 +1,35 @@
 //Get current camera Pos
-var camX = camera_get_view_x(camera);
-var camY = camera_get_view_y(camera);
-var camW = camera_get_view_width(camera);
-var camH = camera_get_view_height(camera);
+camX = camera_get_view_x(camera);
+camY = camera_get_view_y(camera);
+camW = camera_get_view_width(camera);
+camH = camera_get_view_height(camera);
 
-//panning
-if (mouse_check_button(mb_left))
+//Set target camera pos
+if instance_exists(obj_PlayerDeltarune)
 {
-	var move_x = device_mouse_x_to_gui(0) - mouse_x_prev;
-	var move_y = device_mouse_y_to_gui(0) - mouse_y_prev;
-	
-	camX -= move_x;
-	camY -= move_y;
+	targetX = obj_PlayerDeltarune.x - camW/2;
+	targetY = obj_PlayerDeltarune.y - camH/2;
+}else{
+	targetX = room_width/2 - camW/2;
+	targetY = room_height/2 - camH/2;
 }
-else
-{
-	//Set target camera pos
-	if instance_exists(obj_PlayerDeltarune)
-	{
-		targetX = obj_PlayerDeltarune.x - camW/2;
-		targetY = obj_PlayerDeltarune.y - camH/2;
-	}else{
-		targetX = room_width/2 - camW/2;
-		targetY = room_height/2 - camH/2;
-	}
 
-	//Clamp the Target to room bounds
-	targetX = clamp(targetX, 0, room_width - camW);
-	targetY = clamp(targetY, 0, room_height - camH);
+//Clamp the Target to room bounds
+tadrgetX = clamp(targetX, 0, room_width - camW);
+targetY = clamp(targetY, 0, room_height - camH);
 
-	//Smoothly Move the Camera
-	camX = lerp(camX, targetX, Cam_Smooth);
-	camY = lerp(camY, targetY, Cam_Smooth);	
-}
+//Smoothly Move the Camera
+camX = lerp(camX, targetX, Cam_Smooth);
+camY = lerp(camY, targetY, Cam_Smooth);	
+
 
 //Zooming
 #region Example (Mouse scroll)
-/*wheel = mouse_wheel_down() - mouse_wheel_up();
+//wheel = mouse_wheel_down() - mouse_wheel_up();
 
-if (wheel != 0)
+if (Zooming == true)
 {
-	wheel *= 0.5	
+	wheel = zoomrate	
 	
 	//Add to size
 	var addW = camW * wheel;
@@ -52,45 +41,31 @@ if (wheel != 0)
 	//Position
 	camX -= addW / 2;
 	camY -= addH / 2;
-}*/
-#endregion
-
-//wheel = mouse_wheel_down() - mouse_wheel_up();
-
-
-//Add to size
-var addW = camW * zoomrate;
-var addH = camH * zoomrate;
 	
-if (zoomtime != 0)
-{
-	camW += addW;
-	camH += addH;
-	
-	//Position
-	camX -= addW / 2;
-	camY -= addH / 2;
-	
-	zoomtime -= 1
-	zoomMinMax += zoomrate
+	Zooming = false
 }
 
-if (zoomMinMax < 1)
+
+#endregion
+
+if keyboard_check_pressed(ord("K"))
 {
-	if keyboard_check_pressed(ord("K"))
-	{
-		zoomtime = 30
-		zoomrate = 0.01
-	}
-}else if(zoomMinMax > 1)
-{
-	zoomMinMax = 1	
+	//zoomtime = 30
+	zoomrate = -0.1
+	Zooming = true;
 }
 
 if keyboard_check_pressed(ord("L"))
 {
+	//zoomtime = 30
+	zoomrate = 0.1
+	Zooming = true;
+}
+
+if keyboard_check_pressed(ord("J"))
+{
 	zoomtime = 30
-	zoomrate = -0.01
+	zoomrate = 1
 }
 
 //Apply cam Pos
