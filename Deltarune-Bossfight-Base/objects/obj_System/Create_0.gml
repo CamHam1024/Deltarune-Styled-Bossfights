@@ -48,7 +48,7 @@ global.PlayerScoreMulti = 1; // Player Score Multiplier
 #region Other Bits
 
 //instance_create_depth(960, 400, -1, obj_BadHeart);
-instance_create_depth(0, 0, -10, obj_Debug);
+instance_create_depth(0, 16, -10, obj_Debug);
 //instance_create_depth(1920/2, 1040 - 50, -1, obj_Player);
 
 //instance_create_depth(960, 400, 1, obj_HUD);

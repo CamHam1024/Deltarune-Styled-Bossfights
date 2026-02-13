@@ -1,8 +1,20 @@
 //General
 //Window Variables
-Res_W = 1920//display_get_width();
-Res_H = 1080//display_get_height();
-Res_Scale = 0.8
+
+Dis_W = display_get_width();
+Dis_H = display_get_height();
+
+if (Dis_W > 1920)
+{
+	Res_Scale = 1.3;
+}
+else
+{
+	Res_Scale = 1;
+}
+
+Res_W = 1920 //display_get_width() //- 20    // 1920 | 2560 | 640
+Res_H = 1080 //display_get_height() //-20   // 1080 | 1440 | 360
 
 Cam_Smooth = 0.1
 
@@ -18,17 +30,18 @@ camera = camera_create_view(room_width/2, room_height/2, Res_W, Res_H, 0);
 
 view_set_camera(0, camera);
 
+//Center window
+window_width = ceil(Res_W * Res_Scale) - (64*3);
+window_height = ceil(Res_H * Res_Scale) - (36*3);
+
+window_set_position(Dis_W/2 - window_width/2, Dis_H/2 - window_height/2);
+
 //Resize window & application surface
-window_set_size(Res_W * Res_Scale, Res_H * Res_Scale);
-surface_resize(application_surface, Res_W * Res_Scale, Res_H * Res_Scale);
+window_set_size(window_width, window_height);
+surface_resize(application_surface, window_width, window_height);
 
 display_set_gui_size(Res_W, Res_H); // gui size
 
-//Center window
-window_width = Res_W * Res_Scale;
-window_height = Res_H * Res_Scale;
-
-window_set_position(Res_W/2 - window_width/2, Res_H/2 - window_height/2);
 
 //General Varaiables
 angle = 0;
