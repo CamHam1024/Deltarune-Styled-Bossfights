@@ -64,11 +64,11 @@ if (AttackStart == true)
 	{
 		radius += 1/time;
 	}
-	global.PlayAreaX1 = x + lengthdir_x(dis, dir1) // top left x
-    global.PlayAreaY1 = y + lengthdir_y(dis, dir1); // top left y
+	obj_System.PlayAreaX1 = x + lengthdir_x(dis, dir1) // top left x
+    obj_System.PlayAreaY1 = y + lengthdir_y(dis, dir1); // top left y
 
-    global.PlayAreaX2 = x + lengthdir_x(dis, dir4)-1; // bottom right x
-    global.PlayAreaY2 = y + lengthdir_y(dis, dir4)-1; // Bottom right y	
+    obj_System.PlayAreaX2 = x + lengthdir_x(dis, dir4)-1; // bottom right x
+    obj_System.PlayAreaY2 = y + lengthdir_y(dis, dir4)-1; // Bottom right y	
 }
 else
 {

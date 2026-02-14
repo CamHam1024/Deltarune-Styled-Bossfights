@@ -13,8 +13,8 @@ if (Invuln == false)
 			
 		obj_Player.InvulnTimer = 60;
 		obj_Player.Invuln = true;
-		obj_HUD.Shaking = true;
-		obj_HUD.Shake_Timer = 30;
+		obj_HUDBak.Shaking = true;
+		obj_HUDBak.Shake_Timer = 30;
 	}
 		
 }

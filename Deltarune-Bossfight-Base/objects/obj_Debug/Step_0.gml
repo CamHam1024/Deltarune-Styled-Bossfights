@@ -53,9 +53,9 @@ if (keyboard_check_pressed(vk_f6))
 	global.Darkness =! global.Darkness
 }
 
-if (instance_exists(obj_HUD))
+if (instance_exists(obj_HUDBak))
 {
-	with(obj_HUD)
+	with(obj_HUDBak)
 	{
 		if (keyboard_check_pressed(vk_f7))
 		{

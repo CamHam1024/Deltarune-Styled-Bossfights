@@ -1,17 +1,17 @@
-// obj_DeltaruneStuff - Draw Event
+// obj_DeltStuff - Draw Event
 
 /*SoulMode, Color
 0 = Normal, 0 = Red
 1 = Integrity, 170 = Blue
 */
 
-if (global.SoulMode == 0)
+if (SoulMode == 0)
 {
-	global.SoulColour = 0
+	SoulColour = 0
 }
-if (global.SoulMode == 1)
+if (SoulMode == 1)
 {
-	global.SoulColour = 171
+	SoulColour = 171
 }
 
 //Placeholder characters

@@ -1,7 +1,7 @@
 // obj_Debug - Create Event
 
-DisplayText = true;
-DisplayPA = false;
+DisplayDebug = true;
+DisplayPlayArea = false;
 
 huecycle = 0;
 hue[0] = 255;

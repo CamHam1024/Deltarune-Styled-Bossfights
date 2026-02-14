@@ -5,36 +5,36 @@
 //Left
 if (keyboard_check(vk_left))
 {
-	if (x > global.PlayAreaX1+(sprite_width/2))
+	if (x > obj_System.PlayAreaX1+(sprite_width/2))
 	{
-		x -= playerSpeed * moveMulti * global.ComboMulti;
+		x -= playerSpeed * moveMulti * obj_System.ComboMulti;
 	}
 }
 
 //Right
 if (keyboard_check(vk_right))
 {
-	if (x < global.PlayAreaX2-(sprite_width/2))
+	if (x < obj_System.PlayAreaX2-(sprite_width/2))
 	{
-		x += playerSpeed * moveMulti * global.ComboMulti;
+		x += playerSpeed * moveMulti * obj_System.ComboMulti;
 	}
 }
 
 //Up
 if (keyboard_check(vk_up))
 {
-	if (y > global.PlayAreaY1+(sprite_height/2))
+	if (y > obj_System.PlayAreaY1+(sprite_height/2))
 	{
-		y -= playerSpeed * moveMulti * global.ComboMulti;
+		y -= playerSpeed * moveMulti * obj_System.ComboMulti;
 	}
 }
 
 //Down
 if (keyboard_check(vk_down))
 {
-	if (y < global.PlayAreaY2-(sprite_height/2))
+	if (y < obj_System.PlayAreaY2-(sprite_height/2))
 	{
-		y += playerSpeed * moveMulti * global.ComboMulti;
+		y += playerSpeed * moveMulti * obj_System.ComboMulti;
 	}
 }
 
@@ -66,27 +66,27 @@ var moveDis = 0; //calculates how far the player overshoots
 
 //Puts player back into the bounds
 //Left
-if (x < global.PlayAreaX1 + (sprite_width/2)) 
+if (x < obj_System.PlayAreaX1 + (sprite_width/2)) 
 {
-	moveDis = global.PlayAreaX1 - x;
+	moveDis = obj_System.PlayAreaX1 - x;
 	x = x + (sprite_width/2) + moveDis;
 }
 //Right
-if (x > global.PlayAreaX2 - (sprite_width/2)-1)
+if (x > obj_System.PlayAreaX2 - (sprite_width/2)-1)
 {
-	moveDis = x - global.PlayAreaX2;
+	moveDis = x - obj_System.PlayAreaX2;
 	x = x - (sprite_width/2) - moveDis + 1;
 }
 //Up
-if (y < global.PlayAreaY1 + (sprite_height/2))
+if (y < obj_System.PlayAreaY1 + (sprite_height/2))
 {
-	moveDis = global.PlayAreaY1 - y;
+	moveDis = obj_System.PlayAreaY1 - y;
 	y = y + (sprite_height/2) + moveDis;
 }
 //down
-if (y > global.PlayAreaY2 - (sprite_height/2)-1)
+if (y > obj_System.PlayAreaY2 - (sprite_height/2)-1)
 {
-	moveDis = y - global.PlayAreaY2;
+	moveDis = y - obj_System.PlayAreaY2;
 	y = y - (sprite_height/2) - moveDis+1;
 }
 #endregion

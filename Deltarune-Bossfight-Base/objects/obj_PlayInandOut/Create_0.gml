@@ -1,6 +1,6 @@
 // obj_PlayInandOut - Create
 
-image_blend = make_colour_hsv(global.SoulColour,255,255);
+image_blend = make_colour_hsv(obj_DeltStuff.SoulColour,255,255);
 image_speed = 0
 image_xscale = 1;
 image_yscale = 1;

@@ -1,4 +1,4 @@
-// obj_DeltaStuff - Create
+// obj_DeltStuff - Create
 
 #region Set Up
 
@@ -15,9 +15,9 @@ SoulMode, Color
 1 = Integrity, 170 = Blue
 */
 
-global.SoulMode = 0
-if (global.SoulMode = 0){global.SoulColour = 0}
-if (global.SoulMode = 1){global.SoulColour = 170}
+SoulMode = 0
+if (SoulMode = 0){SoulColour = 0}
+if (SoulMode = 1){SoulColour = 170}
 
 #endregion
 

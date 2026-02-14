@@ -78,16 +78,3 @@ camera_set_view_angle(camera, angle);
 // store previous
 mouse_x_prev = device_mouse_x_to_gui(0);
 mouse_y_prev = device_mouse_y_to_gui(0);
-
-
-
-
-
-
-
-
-
-
-
-
-
