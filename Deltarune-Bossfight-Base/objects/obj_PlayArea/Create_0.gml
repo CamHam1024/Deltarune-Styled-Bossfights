@@ -1,4 +1,4 @@
-// obj_PAIntro - Create Event
+// obj_PlayArea - Create Event
 AttackStart = true;
 
 xsize = 150;
@@ -29,4 +29,9 @@ AniTimer = 0;
 
 radius = 0; //Radius of the length_dir
 spindir = 0;
+
+//create soul when box is created
+PlaySoul = instance_create_depth(400, room_height/2, -2, obj_PlayInandOut);
+PlaySoul.destPosX = room_width/2;
+PlaySoul.destPosY = room_height/2;
 

@@ -10,8 +10,18 @@ ComboMulti = delta_multi * WorldSpeed; //combines Delta_Multi with the WorldSpee
 
 #endregion
 
-#region Pauseing
+#region Instance Spawning
+if !instance_exists(obj_HUD)
+{
+	instance_create_depth(0, 16, 0, obj_HUD);
+}
+if !instance_exists(obj_Debug)
+{
+	instance_create_depth(0, 0, -10, obj_Debug);
+}
+#endregion
 
+#region Pauseing
 if (keyboard_check_pressed(vk_home))
 {
 	if (Paused != true)

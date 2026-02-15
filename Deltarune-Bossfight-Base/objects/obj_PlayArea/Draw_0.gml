@@ -1,4 +1,4 @@
-// obj_PAIntro - Draw event
+// obj_PlayArea - Draw event
 
 #region PA Adjustments
 

@@ -12,8 +12,8 @@
   "name":"obj_LightEmitt",
   "overriddenProperties":[],
   "parent":{
-    "name":"Deltachicken",
-    "path":"folders/Objects/Experiment Objects/Deltachicken.yy",
+    "name":"Experiment Objects",
+    "path":"folders/Objects/Experiment Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

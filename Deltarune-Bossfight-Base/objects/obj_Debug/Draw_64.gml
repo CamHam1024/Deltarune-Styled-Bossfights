@@ -35,13 +35,13 @@ if (DisplayDebug == true)
 	if instance_exists(obj_HUD)
 	{
 		draw_text(25, 25+(fntSize*9), "Screen Vars: ");
-		draw_text(25, 25+(fntSize*10), "Res W: " + string(obj_HUD.Res_W));
-		draw_text(25, 25+(fntSize*11), "Res H: " + string(obj_HUD.Res_H));
-		draw_text(25, 25+(fntSize*12), "Res scale: " + string(obj_HUD.Res_Scale));
+		draw_text(25, 25+(fntSize*10), "Res W: " + string(obj_System.Res_W));
+		draw_text(25, 25+(fntSize*11), "Res H: " + string(obj_System.Res_H));
+		draw_text(25, 25+(fntSize*12), "Res scale: " + string(obj_System.Res_Scale));
 		
 		draw_text(25*10, 25+(fntSize*9), "Wind Vars: (Res * Res-scale)");
-		draw_text(25*10, 25+(fntSize*10), "Wind W: " + string(obj_HUD.window_width));
-		draw_text(25*10, 25+(fntSize*11), "Wind H: " + string(obj_HUD.window_height));
+		draw_text(25*10, 25+(fntSize*10), "Wind W: " + string(obj_System.window_width));
+		draw_text(25*10, 25+(fntSize*11), "Wind H: " + string(obj_System.window_height));
 		
 		//draw_text(25*10, 25+(fntSize*9), "Zoom Time: " + string(obj_VeiwTinkering.zoomtime));
 		//draw_text(25*10, 25+(fntSize*10), "Zoom rate: " + string(obj_VeiwTinkering.zoomrate));

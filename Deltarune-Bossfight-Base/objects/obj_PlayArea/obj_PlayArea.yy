@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Deltachicken",
-    "path":"folders/Objects/Experiment Objects/Deltachicken.yy",
+    "path":"folders/Objects/Deltachicken.yy",
   },
   "parentObjectId":null,
   "persistent":false,

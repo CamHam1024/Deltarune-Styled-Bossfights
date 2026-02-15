@@ -22,7 +22,6 @@ image_xscale = 1;
 image_yscale = 1;
 
 //Player Specific
-
 if (currentPlayer = 0)
 {
 	playerSpeed = 3;

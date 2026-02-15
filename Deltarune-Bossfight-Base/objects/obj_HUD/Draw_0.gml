@@ -2,4 +2,5 @@
 
 StageBG_MiddyLab(MoveVariable);
 MoveVariable += 1;
+
 #endregion

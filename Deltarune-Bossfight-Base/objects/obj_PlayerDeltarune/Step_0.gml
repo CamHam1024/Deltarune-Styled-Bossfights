@@ -37,11 +37,9 @@ if (keyboard_check(vk_down))
 		y += playerSpeed * moveMulti * obj_System.ComboMulti;
 	}
 }
-
 #endregion
 
 #region Player Focusing
-
 if (keyboard_check(vk_shift))
 {
 	focused = true;
