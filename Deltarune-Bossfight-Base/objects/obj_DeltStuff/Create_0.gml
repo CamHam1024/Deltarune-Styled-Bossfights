@@ -25,7 +25,7 @@ figtArea.ysize = 300;
 
 #endregion
 
-instance_create_depth(random_range(-1000, 1000), random_range(-1000, 1000), -1, obj_BadHeart);
+//instance_create_depth(random_range(-1000, 1000), random_range(-1000, 1000), -1, obj_BadHeart);
 //instance_create_depth(1920/2, 1040 - 50, -1, obj_Player);
 //instance_create_depth(1920/2-100, 1080/2-300, -2, obj_TestSpawner);
 //instance_create_depth(1920/2+100, 1080/2-300, -2, obj_TestSpawner);

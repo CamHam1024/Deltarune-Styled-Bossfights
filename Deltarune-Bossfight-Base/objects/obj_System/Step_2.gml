@@ -1,33 +1,8 @@
 //Camera manipulations
-//Get current camera Pos
-camX = camera_get_view_x(camera);
-camY = camera_get_view_y(camera);
-camW = camera_get_view_width(camera);
-camH = camera_get_view_height(camera);
-
-//Set target camera pos
-if instance_exists(obj_PlayerDeltarune)
-{
-	targetX = obj_PlayerDeltarune.x - camW/2;
-	targetY = obj_PlayerDeltarune.y - camH/2;
-}
-else
-{
-	targetX = room_width/2 - camW/2;
-	targetY = room_height/2 - camH/2;
-}
-
-//Clamp the Target to room bounds
-targetX = clamp(targetX, 0, room_width - camW);
-targetY = clamp(targetY, 0, room_height - camH);
-
-//Smoothly Move the Camera
-camX = lerp(camX, targetX, Cam_Smooth);
-camY = lerp(camY, targetY, Cam_Smooth);	
-
 
 //Zooming
 #region Example (Mouse scroll)
+/*
 //wheel = mouse_wheel_down() - mouse_wheel_up();
 
 if (Zooming == true)
@@ -47,34 +22,47 @@ if (Zooming == true)
 	
 	Zooming = false
 }
-
-
+*/
 #endregion
+
+#region Zoom Attempts
+//wheel = mouse_wheel_down() - mouse_wheel_up();
 
 if keyboard_check_pressed(ord("K"))
 {
-	//zoomtime = 30
-	zoomrate = -0.1
-	Zooming = true;
+	zoomrate += 0.5
+	//camX = (Res_W - camW) * zoomrate;
+	//camY = (Res_H - camH) * zoomrate;
 }
 
 if keyboard_check_pressed(ord("L"))
 {
-	//zoomtime = 30
-	zoomrate = 0.1
-	Zooming = true;
+	zoomrate -= 0.5
+	//camX = (Res_W - camW) * zoomrate;
+	//camY = (Res_H - camH) * zoomrate;
 }
 
 if keyboard_check_pressed(ord("J"))
 {
-	zoomtime = 30
 	zoomrate = 1
+	//camX = Res_W/2 - camW/2;
+	//camY = Res_H/2 - camH/2;
 }
+#endregion
+
+//camera moving
+if instance_exists(obj_PlayerDeltarune)
+{
+	targX = obj_PlayerDeltarune.x;
+	targY = obj_PlayerDeltarune.y;	
+}
+
+cameraMovement(camera, targX, targY, Cam_Smooth)
 
 //Apply cam Pos
 camera_set_view_pos(camera, camX, camY);
-camera_set_view_size(camera, camW, camH)
 camera_set_view_angle(camera, angle);
+camera_set_view_size(camera, Res_W*zoomrate, Res_H*zoomrate)
 
 //Spinning += 0.1
 

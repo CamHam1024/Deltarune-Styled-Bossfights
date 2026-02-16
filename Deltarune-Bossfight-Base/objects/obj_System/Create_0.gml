@@ -84,10 +84,13 @@ zoomtime = 0;
 zoomMinMax = 1;
 Zooming = false
 
+targX = room_width/2;
+targY = room_height/2;
+
 wheel = 0;
 
 //Create Camera
-camera = camera_create_view(room_width/2 - Res_W/2, room_height/2 - Res_H/2, Res_W, Res_H, 0);
+camera = camera_create_view(targX - Res_W/2, targY - Res_H/2, Res_W, Res_H, 0);
 
 view_set_camera(0, camera);
 
