@@ -6,7 +6,7 @@
 actual_delta = delta_time / 1000000 //use this for Timers and clocks!
 delta_multi = actual_delta / target_delta //Delta Multiplier: use this for everything else?
 
-ComboMulti = delta_multi * WorldSpeed; //combines Delta_Multi with the WorldSpeed
+ComboMulti = delta_multi * WorldSpeed; //combines Delta_Multi with the WorldSpeed (obj_System.ComboMulti)
 
 #endregion
 

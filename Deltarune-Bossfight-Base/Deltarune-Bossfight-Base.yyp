@@ -65,6 +65,7 @@
     {"id":{"name":"obj_PAIntroParticle","path":"objects/obj_PAIntroParticle/obj_PAIntroParticle.yy",},},
     {"id":{"name":"obj_ParentBullet","path":"objects/obj_ParentBullet/obj_ParentBullet.yy",},},
     {"id":{"name":"obj_Pause","path":"objects/obj_Pause/obj_Pause.yy",},},
+    {"id":{"name":"obj_PlayArea_Remake","path":"objects/obj_PlayArea_Remake/obj_PlayArea_Remake.yy",},},
     {"id":{"name":"obj_PlayArea","path":"objects/obj_PlayArea/obj_PlayArea.yy",},},
     {"id":{"name":"obj_Player","path":"objects/obj_Player/obj_Player.yy",},},
     {"id":{"name":"obj_PlayerDeltarune","path":"objects/obj_PlayerDeltarune/obj_PlayerDeltarune.yy",},},

@@ -1,19 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_LightEmitt",
+  "%Name":"obj_PlayArea_Remake",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":73,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_LightEmitt",
+  "name":"obj_PlayArea_Remake",
   "overriddenProperties":[],
   "parent":{
-    "name":"Experiment Objects",
-    "path":"folders/Objects/Experiment Objects.yy",
+    "name":"Deltachicken",
+    "path":"folders/Objects/Deltachicken.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -33,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_LightEmitter",
-    "path":"sprites/spr_LightEmitter/spr_LightEmitter.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
