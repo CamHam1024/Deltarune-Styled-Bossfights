@@ -1,4 +1,6 @@
 //Camera manipulations
+//resets the camera
+view_set_camera(0, camera);
 
 //Zooming
 #region Example (Mouse scroll)

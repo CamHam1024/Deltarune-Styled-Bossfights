@@ -2,7 +2,7 @@
 
 #region Player Hurt / Graze
 
-if (Invuln == false)
+/*if (Invuln == false)
 {
 	with(other)
 	{
@@ -17,6 +17,6 @@ if (Invuln == false)
 		obj_HUDBak.Shake_Timer = 30;
 	}
 		
-}
+}*/
 
 #endregion

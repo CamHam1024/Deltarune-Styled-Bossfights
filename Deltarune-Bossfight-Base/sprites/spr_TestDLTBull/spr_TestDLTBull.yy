@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"Chikentale",
-    "path":"folders/Sprites/Experimental sprite/Chikentale.yy",
+    "path":"folders/Sprites/Chikentale.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

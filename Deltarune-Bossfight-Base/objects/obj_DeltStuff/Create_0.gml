@@ -27,5 +27,5 @@ figtArea.ysize = 300;
 
 //instance_create_depth(random_range(-1000, 1000), random_range(-1000, 1000), -1, obj_BadHeart);
 //instance_create_depth(1920/2, 1040 - 50, -1, obj_Player);
-//instance_create_depth(1920/2-100, 1080/2-300, -2, obj_TestSpawner);
-//instance_create_depth(1920/2+100, 1080/2-300, -2, obj_TestSpawner);
+instance_create_depth(room_width/2, room_height/2-300, -2, obj_TestSpawner);
+//instance_create_depth(room_width/2+300, room_height/2+300, -2, obj_TestSpawner);

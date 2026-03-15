@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_FunSpawner",
-    "path":"sprites/spr_FunSpawner/spr_FunSpawner.yy",
+    "name":"spr_TestDLTBull",
+    "path":"sprites/spr_TestDLTBull/spr_TestDLTBull.yy",
   },
   "spriteMaskId":null,
   "visible":true,

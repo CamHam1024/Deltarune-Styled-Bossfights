@@ -1,19 +1,22 @@
 {
   "$GMObject":"",
-  "%Name":"obj_PlayArea_Remake",
+  "%Name":"obj_CircleBulletClipped",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_PlayArea_Remake",
+  "name":"obj_CircleBulletClipped",
   "overriddenProperties":[],
   "parent":{
-    "name":"Deltachicken",
-    "path":"folders/Objects/Deltachicken.yy",
+    "name":"Danmaku",
+    "path":"folders/Objects/Game Objects/Enemy Objects/Danmaku.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_ParentBullet_masked",
+    "path":"objects/obj_ParentBullet_masked/obj_ParentBullet_masked.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,7 +34,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_TestDLTBull2",
+    "path":"sprites/spr_TestDLTBull2/spr_TestDLTBull2.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

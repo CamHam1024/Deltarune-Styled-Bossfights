@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_PlayArea_Remake",
+  "%Name":"obj_ParentBullet_masked",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_PlayArea_Remake",
+  "name":"obj_ParentBullet_masked",
   "overriddenProperties":[],
   "parent":{
-    "name":"Deltachicken",
-    "path":"folders/Objects/Deltachicken.yy",
+    "name":"Danmaku",
+    "path":"folders/Objects/Game Objects/Enemy Objects/Danmaku.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,7 +31,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_TestDLTBull",
+    "path":"sprites/spr_TestDLTBull/spr_TestDLTBull.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
