@@ -90,52 +90,35 @@ else
 draw_primitive_begin(pr_trianglestrip);
 
 //1 bottom left V
-draw_vertex_color((x + lengthdir_x(radius*dis, dir3+spindir+attspin)) + lengthdir_x(mag, spindir+adg1+attspin), (y + lengthdir_y(radius*dis, dir3+spindir+attspin)) + lengthdir_y(mag, spindir+adg1+attspin), c_green, 1); 
+draw_vertex_color((x + lengthdir_x(radius*dis, dir3+spindir)) + lengthdir_x(mag, spindir+adg1), (y + lengthdir_y(radius*dis, dir3+spindir)) + lengthdir_y(mag, spindir+adg1), c_green, 1); 
+
 //2 bottom right
-draw_vertex_color((x + lengthdir_x(radius*dis, dir4+spindir+attspin)) + lengthdir_x(mag, spindir+adg2+attspin), (y + lengthdir_y(radius*dis, dir4+spindir+attspin)) + lengthdir_y(mag, spindir+adg2+attspin), c_green, 1); 
+draw_vertex_color((x + lengthdir_x(radius*dis, dir4+spindir)) + lengthdir_x(mag, spindir+adg2), (y + lengthdir_y(radius*dis, dir4+spindir)) + lengthdir_y(mag, spindir+adg2), c_green, 1); 
+
 //3 top left
-draw_vertex_color((x + lengthdir_x(radius*dis, dir1+spindir+attspin)) + lengthdir_x(mag, spindir+adg3+attspin), (y + lengthdir_y(radius*dis, dir1+spindir+attspin)) + lengthdir_y(mag, spindir+adg3+attspin), c_green, 1); 
+draw_vertex_color((x + lengthdir_x(radius*dis, dir1+spindir)) + lengthdir_x(mag, spindir+adg3), (y + lengthdir_y(radius*dis, dir1+spindir)) + lengthdir_y(mag, spindir+adg3), c_green, 1); 
+
 //4 top right
-draw_vertex_color((x + lengthdir_x(radius*dis, dir2+spindir+attspin))+ lengthdir_x(mag, spindir+adg4+attspin), (y + lengthdir_y(radius*dis, dir2+spindir+attspin))+ lengthdir_y(mag, spindir+adg4+attspin), c_green, 1); 
+draw_vertex_color((x + lengthdir_x(radius*dis, dir2+spindir))+ lengthdir_x(mag, spindir+adg4), (y + lengthdir_y(radius*dis, dir2+spindir))+ lengthdir_y(mag, spindir+adg4), c_green, 1); 
 
 draw_primitive_end();
-
 #endregion
 
-#region Play area
-if (!surface_exists(batsurf)) {batsurf = surface_create(room_width, room_height)}
-
-surface_set_target(batsurf);
-draw_clear_alpha(c_black, 0);
-boxcol = c_black
-#region Primitive box
+#region Play area 
 draw_primitive_begin(pr_trianglestrip);
-//1 bottom left 3
-draw_vertex_color(x + lengthdir_x(radius*dis, dir3+spindir+attspin), y + lengthdir_y(radius*dis, dir3+spindir+attspin), boxcol, 1); 
-//2 bottom right 4
-draw_vertex_color(x + lengthdir_x(radius*dis, dir4+spindir+attspin), y + lengthdir_y(radius*dis, dir4+spindir+attspin), boxcol, 1); 
-//3 top left 1
-draw_vertex_color(x + lengthdir_x(radius*dis, dir1+spindir+attspin), y + lengthdir_y(radius*dis, dir1+spindir+attspin), boxcol, 1); 
-//4 top right 2
-draw_vertex_color(x + lengthdir_x(radius*dis, dir2+spindir+attspin), y + lengthdir_y(radius*dis, dir2+spindir+attspin), boxcol, 1); 
+
+//1 bottom left
+draw_vertex_color(x + lengthdir_x(radius*dis, dir3+spindir), y + lengthdir_y(radius*dis, dir3+spindir), c_black, 1); 
+
+//2 bottom right
+draw_vertex_color(x + lengthdir_x(radius*dis, dir4+spindir), y + lengthdir_y(radius*dis, dir4+spindir), c_black, 1); 
+
+//3 top left
+draw_vertex_color(x + lengthdir_x(radius*dis, dir1+spindir), y + lengthdir_y(radius*dis, dir1+spindir), c_black, 1); 
+
+//4 top right
+draw_vertex_color(x + lengthdir_x(radius*dis, dir2+spindir), y + lengthdir_y(radius*dis, dir2+spindir), c_black, 1); 
+
 draw_primitive_end();
-#endregion
-
-//draw overlap
-gpu_set_colourwriteenable(1, 1, 1, 0);
-
-
-	with(obj_ParentBullet_masked)
-	{
-		draw_self()	
-	}
-
-gpu_set_colourwriteenable(1, 1, 1, 1);
-
-//reset target
-surface_reset_target();
-
-//draw surface
-draw_surface(batsurf, 0, 0)
 
 #endregion

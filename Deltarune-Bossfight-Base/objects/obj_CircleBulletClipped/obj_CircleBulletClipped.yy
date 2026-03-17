@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_TestDLTBull2",
-    "path":"sprites/spr_TestDLTBull2/spr_TestDLTBull2.yy",
+    "name":"spr_TestDLTBull",
+    "path":"sprites/spr_TestDLTBull/spr_TestDLTBull.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -11,7 +11,7 @@ if (global.Darkness == true)
 		global.Background_Surface[0] = surface_create(room_width, room_height); //Normal playable Area Surface
 	}
     
-	draw_surface_part_ext(global.Background_Surface[0], global.PlayAreaX1, global.PlayAreaY1, obj_PlayArea.xsize*2, obj_PlayArea.ysize*2, 
+	draw_surface_part_ext(global.Background_Surface[0], global.PlayAreaX1, global.PlayAreaY1, obj_PlayAreaBAK.xsize*2, obj_PlayAreaBAK.ysize*2, 
 	global.PlayAreaX1, global.PlayAreaY1, 1, 1, c_white, 1);
 	
 	//draw on surface

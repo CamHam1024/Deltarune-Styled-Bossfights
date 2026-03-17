@@ -1,4 +1,4 @@
 // obj_TestBullet - Draw Event
 event_inherited()
 
-image_angle += 360/80
+image_angle += 1

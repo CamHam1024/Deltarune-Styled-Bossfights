@@ -9,8 +9,8 @@ if (!surface_exists(Light_Surface))
 
 sL = global.PlayAreaX1;
 sT = global.PlayAreaY1;
-sW = obj_PlayArea.xsize*2;
-sH = obj_PlayArea.ysize*2;
+sW = obj_PlayAreaBAK.xsize*2;
+sH = obj_PlayAreaBAK.ysize*2;
 sX = global.PlayAreaX1;
 sY = global.PlayAreaY1;
 

@@ -1,7 +1,7 @@
 // obj_PlayArea - Create Event
 AttackStart = true;
 
-xsize = 150;
+xsize = 100;
 ysize = 100;
 
 PAX1 = x-xsize; // top left x
@@ -29,7 +29,11 @@ AniTimer = 0;
 
 radius = 0; //Radius of the length_dir
 spindir = 0;
+attspin = 0;
+//Battle Surface
+batsurf = surface_create(room_width, room_height);
 
+LightBGVar = 0
 //create soul when box is created
 PlaySoul = instance_create_depth(400, room_height/2, -2, obj_PlayInandOut);
 PlaySoul.destPosX = room_width/2;

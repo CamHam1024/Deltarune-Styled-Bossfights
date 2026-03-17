@@ -76,35 +76,5 @@ surface_resize(application_surface, window_width, window_height);
 display_set_gui_size(Res_W, Res_H); // gui size
 #endregion
 
-#region Camera Setup
-//Camera Varaiables
-angle = 0;
-zoomrate = 1;
-zoomtime = 0;
-zoomMinMax = 1;
-Zooming = false
-
-targX = room_width/2;
-targY = room_height/2;
-
-wheel = 0;
-
-//Create Camera
-camera = camera_create_view(targX - Res_W/2, targY - Res_H/2, Res_W, Res_H, 0);
-
-view_set_camera(0, camera);
-
-//Enable veiws
-view_enabled = true;
-view_visible[0] = true;
-
-//Mouse Previous for panning
-mouse_x_prev = device_mouse_x_to_gui(0);
-mouse_y_prev = device_mouse_y_to_gui(0);
-
-camWS = camera_get_view_width(camera);
-camHS = camera_get_view_height(camera);
-#endregion
-
 //instance_create_depth(0, 16, 0, obj_HUD);
 //instance_create_depth(0, 0, -10, obj_Debug);

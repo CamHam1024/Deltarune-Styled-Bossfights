@@ -1,17 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_PlayArea",
+  "%Name":"obj_PlayAreaBAK",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_PlayArea",
+  "name":"obj_PlayAreaBAK",
   "overriddenProperties":[],
   "parent":{
-    "name":"Deltachicken",
-    "path":"folders/Objects/Deltachicken.yy",
+    "name":"Experiment Objects",
+    "path":"folders/Objects/Experiment Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

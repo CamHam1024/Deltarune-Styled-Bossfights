@@ -57,9 +57,13 @@ if instance_exists(obj_PlayerDeltarune)
 {
 	targX = obj_PlayerDeltarune.x;
 	targY = obj_PlayerDeltarune.y;	
+	
+	cameraMovement(camera, targX, targY, Cam_Smooth)
 }
-
-cameraMovement(camera, targX, targY, Cam_Smooth)
+else
+{
+	cameraMovement(camera, x, y, Cam_Smooth)	
+}
 
 //Apply cam Pos
 camera_set_view_pos(camera, camX, camY);
