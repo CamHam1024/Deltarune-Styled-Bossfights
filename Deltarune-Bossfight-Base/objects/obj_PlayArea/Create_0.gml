@@ -27,6 +27,8 @@ adg4 = 45//75;
 
 AniTimer = 0;
 
+outlineCol = c_yellow
+
 radius = 0; //Radius of the length_dir
 spindir = 0;
 attspin = 0;

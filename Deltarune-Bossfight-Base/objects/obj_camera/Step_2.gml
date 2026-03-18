@@ -1,6 +1,21 @@
 //Camera manipulations
+//varaibles
+camX = camera_get_view_x(camera);
+camY = camera_get_view_y(camera);
+camW = camera_get_view_width(camera);
+camH = camera_get_view_height(camera);
+
 //resets the camera
-view_set_camera(0, camera);
+//view_set_camera(0, camera);
+
+//Moving
+/* Example when callign out side of camera
+obj_camera.x = lerp(obj_camera.x,x, 0.1)
+obj_camera.y = lerp(obj_camera.y,y, 0.1) */
+
+//Set target camera pos
+moveposX = x - camW/2;
+moveposY = y - camH/2;
 
 //Zooming
 #region Example (Mouse scroll)
@@ -52,25 +67,12 @@ if keyboard_check_pressed(ord("J"))
 }
 #endregion
 
-//camera moving
-if instance_exists(obj_PlayerDeltarune)
-{
-	targX = obj_PlayerDeltarune.x;
-	targY = obj_PlayerDeltarune.y;	
-	
-	cameraMovement(camera, targX, targY, Cam_Smooth)
-}
-else
-{
-	cameraMovement(camera, x, y, Cam_Smooth)	
-}
+//Spinning += 0.1
 
 //Apply cam Pos
-camera_set_view_pos(camera, camX, camY);
+camera_set_view_pos(camera, moveposX, moveposY);
 camera_set_view_angle(camera, angle);
 camera_set_view_size(camera, Res_W*zoomrate, Res_H*zoomrate)
-
-//Spinning += 0.1
 
 // store previous
 mouse_x_prev = device_mouse_x_to_gui(0);

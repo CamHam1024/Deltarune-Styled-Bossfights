@@ -102,6 +102,3 @@ else if (InvulnTimer > 0)
 }
 
 #endregion
-
-
-

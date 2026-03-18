@@ -26,14 +26,16 @@ else
 //draw_primitive_end();
 
 draw_set_alpha(Alpha);
+outlineCol = make_colour_hsv(obj_DeltStuff.SoulColour,150,200)
+
 //bottom Line
-draw_line_width_color(X[0], Y[0], X[1], Y[1], 7, c_green, c_green)
+draw_line_width_color(X[0], Y[0], X[1], Y[1], 7, outlineCol, outlineCol)
 //top Line
-draw_line_width_color(X[2], Y[2], X[3], Y[3], 7, c_green, c_green)
+draw_line_width_color(X[2], Y[2], X[3], Y[3], 7, outlineCol, outlineCol)
 //left line
-draw_line_width_color(X[0], Y[0], X[2], Y[2], 7, c_green, c_green)
+draw_line_width_color(X[0], Y[0], X[2], Y[2], 7, outlineCol, outlineCol)
 //right line
-draw_line_width_color(X[1], Y[1], X[3], Y[3], 7, c_green, c_green)
+draw_line_width_color(X[1], Y[1], X[3], Y[3], 7, outlineCol, outlineCol)
 
 draw_set_alpha(1);
 #endregion

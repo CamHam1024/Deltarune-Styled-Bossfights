@@ -89,14 +89,19 @@ else
 #region Playable area outline
 draw_primitive_begin(pr_trianglestrip);
 
-//1 bottom left V
-draw_vertex_color((x + lengthdir_x(radius*dis, dir3+spindir+attspin)) + lengthdir_x(mag, spindir+adg1+attspin), (y + lengthdir_y(radius*dis, dir3+spindir+attspin)) + lengthdir_y(mag, spindir+adg1+attspin), c_green, 1); 
+outlineCol = make_colour_hsv(obj_DeltStuff.SoulColour,150,200)
+
+//1 bottom left
+draw_vertex_color((x + lengthdir_x(radius*dis, dir3+spindir+attspin)) + lengthdir_x(mag, spindir+adg1+attspin), (y + lengthdir_y(radius*dis, dir3+spindir+attspin)) + lengthdir_y(mag, spindir+adg1+attspin), outlineCol, 1); 
+
 //2 bottom right
-draw_vertex_color((x + lengthdir_x(radius*dis, dir4+spindir+attspin)) + lengthdir_x(mag, spindir+adg2+attspin), (y + lengthdir_y(radius*dis, dir4+spindir+attspin)) + lengthdir_y(mag, spindir+adg2+attspin), c_green, 1); 
+draw_vertex_color((x + lengthdir_x(radius*dis, dir4+spindir+attspin)) + lengthdir_x(mag, spindir+adg2+attspin), (y + lengthdir_y(radius*dis, dir4+spindir+attspin)) + lengthdir_y(mag, spindir+adg2+attspin), outlineCol, 1); 
+
 //3 top left
-draw_vertex_color((x + lengthdir_x(radius*dis, dir1+spindir+attspin)) + lengthdir_x(mag, spindir+adg3+attspin), (y + lengthdir_y(radius*dis, dir1+spindir+attspin)) + lengthdir_y(mag, spindir+adg3+attspin), c_green, 1); 
+draw_vertex_color((x + lengthdir_x(radius*dis, dir1+spindir+attspin)) + lengthdir_x(mag, spindir+adg3+attspin), (y + lengthdir_y(radius*dis, dir1+spindir+attspin)) + lengthdir_y(mag, spindir+adg3+attspin), outlineCol, 1); 
+
 //4 top right
-draw_vertex_color((x + lengthdir_x(radius*dis, dir2+spindir+attspin))+ lengthdir_x(mag, spindir+adg4+attspin), (y + lengthdir_y(radius*dis, dir2+spindir+attspin))+ lengthdir_y(mag, spindir+adg4+attspin), c_green, 1); 
+draw_vertex_color((x + lengthdir_x(radius*dis, dir2+spindir+attspin))+ lengthdir_x(mag, spindir+adg4+attspin), (y + lengthdir_y(radius*dis, dir2+spindir+attspin))+ lengthdir_y(mag, spindir+adg4+attspin), outlineCol, 1); 
 
 draw_primitive_end();
 
@@ -110,7 +115,7 @@ if (!surface_exists(batsurf))
 
 surface_set_target(batsurf);
 draw_clear_alpha(c_black, 0);
-boxcol = c_black
+boxcol = make_colour_hsv(obj_DeltStuff.SoulColour,150, 5)
 
 #region Primitive box
 draw_primitive_begin(pr_trianglestrip);
@@ -133,33 +138,6 @@ gpu_set_colourwriteenable(1, 1, 1, 0);
 	{
 		with(obj_PlayerDeltarune)
 		{
-			//Player Animation
-			playerAnimation += image_speed * obj_System.ComboMulti;
-			if (playerAnimation == 3) {playerAnimation = 0;}
-
-			#region invuln Anim
-			if (Invuln == true)
-			{
-				SSTimer += 1;
-				if (SSTimer == 15)
-				{
-					if (SoulSat == 255)
-					{
-						SoulSat = 100
-					}
-					else
-					{
-						SoulSat = 255	
-					}
-					SSTimer = 0;
-				}
-			}
-			else
-			{
-				SoulSat = 255
-			}
-			#endregion
-
 			//draw_sprite_ext(spr_Middy, playerAnimation, x, y, 1, 1, 0, c_white, 1);
 			draw_sprite_ext(spr_TestPlayer, image_index, x, y, image_xscale, image_yscale, 0, make_colour_hsv(obj_DeltStuff.SoulColour,255,SoulSat), 1);
 		}

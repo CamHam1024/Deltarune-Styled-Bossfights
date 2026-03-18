@@ -20,8 +20,8 @@ if (SoulMode = 0){SoulColour = 0}
 if (SoulMode = 1){SoulColour = 170}
 
 figtArea = instance_create_depth(room_width/2, room_height/2, 0, obj_PlayArea);
-figtArea.xsize = 500;
-figtArea.ysize = 250;
+figtArea.xsize = 300;
+figtArea.ysize = 150;
 
 #endregion
 

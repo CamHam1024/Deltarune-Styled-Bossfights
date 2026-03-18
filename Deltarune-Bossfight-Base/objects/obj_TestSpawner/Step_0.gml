@@ -2,7 +2,7 @@
 
 #region Spawner animations
 
-image_angle += 10.1;
+image_angle += 1;
 
 #endregion
 
@@ -10,19 +10,21 @@ image_angle += 10.1;
 
 if SpawnTimer = 0
 {
-	bullet = instance_create_depth(x, y, -3, obj_CircleBulletClipped);
-	bullet.direction = image_angle;
-	bullet.speed = 2
-	bullet.image_xscale = 0.8;
-	bullet.image_yscale = 0.8;
+	AtAngle = 0
+	AtNum = 26
 	
-	bullet = instance_create_depth(x, y, -3, obj_CircleBulletClipped);
-	bullet.direction = image_angle-180;
-	bullet.speed = 2
-	bullet.image_xscale = 0.8;
-	bullet.image_yscale = 0.8;
+	repeat(AtNum)
+	{
+		bullet = instance_create_depth(x, y, -3, obj_CircleBulletClipped);
+		bullet.direction = AtAngle;
+		bullet.speed = 3
+		bullet.image_xscale = 1;
+		bullet.image_yscale = 1;
+		
+		AtAngle += 360/AtNum
+	}
 }
 
 SpawnTimer += 1;
-SpawnTimer = SpawnTimer mod 10;
+SpawnTimer = SpawnTimer mod 300;
 #endregion
