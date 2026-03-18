@@ -19,11 +19,10 @@ moveposY = y - camH/2;
 
 //Zooming
 #region Example (Mouse scroll)
-/*
 //wheel = mouse_wheel_down() - mouse_wheel_up();
 
-if (Zooming == true)
-{
+//if (Zooming == true)
+//{
 	wheel = zoomrate	
 	
 	//Add to size
@@ -38,8 +37,8 @@ if (Zooming == true)
 	camY -= addH / 2;
 	
 	Zooming = false
-}
-*/
+//}
+
 #endregion
 
 #region Zoom Attempts
@@ -66,8 +65,6 @@ if keyboard_check_pressed(ord("J"))
 	//camY = Res_H/2 - camH/2;
 }
 #endregion
-
-//Spinning += 0.1
 
 //Apply cam Pos
 camera_set_view_pos(camera, moveposX, moveposY);
