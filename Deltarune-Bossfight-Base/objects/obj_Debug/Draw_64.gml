@@ -51,8 +51,8 @@ if (DisplayDebug == true)
 		
 			draw_text(25*10, 25+(fntSize*14), "Camera Target zoom: ");
 			draw_text(25*10, 25+(fntSize*15), "Zoom Rate: " + string(obj_camera.zoomrate));
-			draw_text(25*10, 25+(fntSize*16), "Cam x: " + string(camera_get_view_x(obj_camera.camera)));
-			draw_text(25*10, 25+(fntSize*17), "Cam y: " + string(camera_get_view_y(obj_camera.camera)));
+			draw_text(25*10, 25+(fntSize*16), "Cam x: " + string(camera_get_view_x(view_camera[0])));
+			draw_text(25*10, 25+(fntSize*17), "Cam y: " + string(camera_get_view_y(view_camera[0])));
 		
 			//draw_text(25*10, 25+(fntSize*9), "Zoom Time: " + string(obj_VeiwTinkering.zoomtime));
 			//draw_text(25*10, 25+(fntSize*10), "Zoom rate: " + string(obj_VeiwTinkering.zoomrate));
