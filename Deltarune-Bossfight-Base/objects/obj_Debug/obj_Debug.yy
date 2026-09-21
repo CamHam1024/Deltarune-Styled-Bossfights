@@ -40,5 +40,5 @@
     "path":"sprites/spr_DebugIndicator/spr_DebugIndicator.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

@@ -1,0 +1,38 @@
+{
+  "$GMTileSet":"v1",
+  "%Name":"TestTiles",
+  "autoTileSets":[],
+  "macroPageTiles":{
+    "SerialiseHeight":2,
+    "SerialiseWidth":2,
+    "TileSerialiseData":[2,3,1,4,],
+  },
+  "name":"TestTiles",
+  "out_columns":3,
+  "out_tilehborder":2,
+  "out_tilevborder":2,
+  "parent":{
+    "name":"Experimental sprite",
+    "path":"folders/Sprites/Experimental sprite.yy",
+  },
+  "resourceType":"GMTileSet",
+  "resourceVersion":"2.0",
+  "spriteId":{
+    "name":"spr_TestFloor",
+    "path":"sprites/spr_TestFloor/spr_TestFloor.yy",
+  },
+  "spriteNoExport":false,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
+  "tileAnimationFrames":[],
+  "tileAnimationSpeed":15.0,
+  "tileHeight":64,
+  "tilehsep":0,
+  "tilevsep":0,
+  "tileWidth":64,
+  "tilexoff":0,
+  "tileyoff":0,
+  "tile_count":9,
+}
