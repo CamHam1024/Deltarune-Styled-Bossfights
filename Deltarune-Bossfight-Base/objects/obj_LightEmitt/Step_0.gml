@@ -24,9 +24,9 @@ ds_list_clear(rays);
 //Outer walls
 Rectangle(boxX, boxY, boxW, boxH, 0);
 
-for (var i = 0; i < instance_number(obj_Wall); i++;)
+for (var i = 0; i < instance_number(obj_LightWall); i++;)
 {
-    var inst = instance_find(obj_Wall, i);
+    var inst = instance_find(obj_LightWall, i);
     Rectangle(inst.x, inst.y, inst.sprite_width / 2 - 2, inst.sprite_height /2 - 2, inst.image_angle)
 }
 

@@ -29,9 +29,9 @@ if (keyboard_check_pressed(ord("3")))
 }
 
 //Player Invuln
-if (instance_exists(obj_Player))
+if (instance_exists(obj_PlayerObsolite))
 {
-	with(obj_Player)
+	with(obj_PlayerObsolite)
 	{
 		if (keyboard_check_pressed(vk_f1))
 		{

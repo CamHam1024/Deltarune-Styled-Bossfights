@@ -52,7 +52,7 @@ moveposY = y - camH/2;
 
 if keyboard_check_pressed(ord("K"))
 {
-	zoomrate = 1.2
+	zoomrate += 0.5
 }
 
 if keyboard_check_pressed(ord("L"))
@@ -67,7 +67,7 @@ if keyboard_check_pressed(ord("J"))
 }
 #endregion
 
-zoomrate = lerp(zoomrate, 1, 0.05)	
+//zoomrate = lerp(zoomrate, 1, 0.05)	
 
 
 //Apply cam Pos

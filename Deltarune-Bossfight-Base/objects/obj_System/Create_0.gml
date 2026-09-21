@@ -29,6 +29,7 @@ ydiff = room_height - PlayAreaY2 + PlayAreaY1
 Paused = false; //checks if the game is paused 
 PrevWorldSpeed = 1; //mostly used to restore world speed after pausing
 WorldSpeed = 1; //General world speed (useful for slow motion effects!)
+ComboMulti = delta_multi * WorldSpeed; //combines Delta_Multi with the WorldSpeed (obj_System.ComboMulti)
 
 //Game Related Globals
 PlayerMaxHP = 100; //Maximum Player HP
@@ -76,5 +77,5 @@ surface_resize(application_surface, window_width, window_height);
 display_set_gui_size(Res_W, Res_H); // gui size
 #endregion
 
-//instance_create_depth(0, 16, 0, obj_HUD);
+//instance_create_depth(500, 600, 0, obj_OverworldPlayer);
 //instance_create_depth(0, 0, -10, obj_Debug);

@@ -1,6 +1,6 @@
 {
   "$GMObject":"",
-  "%Name":"obj_Player",
+  "%Name":"obj_PlayerObsolite",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
@@ -8,7 +8,7 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_ParentBullet_masked","path":"objects/obj_ParentBullet_masked/obj_ParentBullet_masked.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_Player",
+  "name":"obj_PlayerObsolite",
   "overriddenProperties":[],
   "parent":{
     "name":"Player Objects",

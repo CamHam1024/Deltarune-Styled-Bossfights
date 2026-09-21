@@ -10,20 +10,23 @@ ComboMulti = delta_multi * WorldSpeed; //combines Delta_Multi with the WorldSpee
 
 #endregion
 
+
 #region Instance Spawning
 if !instance_exists(obj_camera)
 {
 	instance_create_depth(room_width/2, room_height/2, 0, obj_camera)	
 }
 
-//if !instance_exists(obj_DeltStuff)
-//{
-//	instance_create_depth(x-32, y, 0, obj_DeltStuff);
-//}
+/*
+if !instance_exists(obj_DeltStuff)
+{
+	instance_create_depth(x-32, y, 0, obj_DeltStuff);
+}
+*/
 
 if !instance_exists(obj_HUD)
 {
-	instance_create_depth(0, 16, 0, obj_HUD);
+	instance_create_depth(0, 16, 1000, obj_HUD);
 }
 
 if !instance_exists(obj_Debug)

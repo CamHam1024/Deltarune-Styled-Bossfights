@@ -92,10 +92,10 @@ function Rectangle(_x, _y, _width, _height, _angle)
 
 #endregion
 
-instance_create_depth(x-100, y, -3, obj_Wall)
-instance_create_depth(x+100, y, -3, obj_Wall)
-instance_create_depth(x, y-100, -3, obj_Wall)
-instance_create_depth(x, y+100, -3, obj_Wall)
+instance_create_depth(x-100, y, -3, obj_LightWall)
+instance_create_depth(x+100, y, -3, obj_LightWall)
+instance_create_depth(x, y-100, -3, obj_LightWall)
+instance_create_depth(x, y+100, -3, obj_LightWall)
 
 Light_Surface = surface_create(room_width, room_height); 
 Shade_Surface = surface_create(room_width, room_height);
