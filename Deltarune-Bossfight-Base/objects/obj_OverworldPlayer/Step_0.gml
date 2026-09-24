@@ -20,8 +20,39 @@ if (down_key = 1 && up_key = 1)
 xSpd = (right_key - left_key) * moveSpd * obj_System.ComboMulti;
 ySpd = (down_key - up_key) * moveSpd * obj_System.ComboMulti;
 
-//Colision
+//Walking Animation
+image_index = (Face*4) + walkFrame
 
+if (xSpd == 0 && ySpd == 0)
+{
+	walkFrame = 0
+}
+else
+{
+	//if walkFrame == 0 {walkFrame = 0.9}
+	walkFrame += 0.1
+	walkFrame = walkFrame % 4
+}
+
+if (ySpd == 0)
+{
+	if (xSpd > 0) {Face = RIGHT};
+	if (xSpd < 0) {Face = LEFT};	
+}
+
+if xSpd > 0 && Face == LEFT {Face = RIGHT};
+if xSpd < 0 && Face == RIGHT {Face = LEFT};
+
+if ySpd > 0 && Face == UP {Face = DOWN};
+if ySpd < 0 && Face == DOWN {Face = UP};
+
+if (xSpd == 0)
+{
+	if (ySpd > 0) {Face = DOWN};
+	if (ySpd < 0) {Face = UP};	
+}
+
+//Colision
 Arr = move_and_collide(xSpd, ySpd, obj_Solid_par);
 
 if array_length(Arr) != 0 and place_meeting(x + (xSpd), y, obj_Solid_par) == true
@@ -35,7 +66,6 @@ if array_length(Arr) != 0 and place_meeting(x, y + (ySpd), obj_Solid_par) == tru
 	y -= (down_key - up_key)
 	ySpd = 0;
 }
-
 
 //Apply movement
 x += xSpd;

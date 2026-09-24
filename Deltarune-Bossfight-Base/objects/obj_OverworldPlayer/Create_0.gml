@@ -8,6 +8,15 @@ image_yscale = 3;
 xSpd = 0;
 ySpd = 0;
 
-moveSpd = 3;
+moveSpd = 2;
 
 slopeMax = 4;
+
+//Movement animation
+Face = DOWN;
+walkFrame = 0
+
+//Debug things
+DialogTypist = scribble_typist();
+DialogTypist.in(0.5, 10);
+

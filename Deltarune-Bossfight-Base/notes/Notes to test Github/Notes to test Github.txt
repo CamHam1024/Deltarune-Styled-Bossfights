@@ -1,3 +1,4 @@
 Does this work? [20 / 09 / 2026]
 
-... Beep?
+Credits (Plugins)
+Draw_sprite_pos_fixed : KeeVee Games : https://musnik.itch.io/draw-sprite-pos-fixed

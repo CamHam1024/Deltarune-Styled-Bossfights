@@ -12,6 +12,13 @@ delta_multi = actual_delta / target_delta //Delta Multiplier: use this for every
 //Look in the Step event for the actual code, as this needs to be continously updated,
 //I've made a macro for this.
 
+//Draw Pos Fixed stuff
+vertex_format_begin();
+vertex_format_add_colour();
+vertex_format_add_position();
+vertex_format_add_normal();
+global.format_perspective = vertex_format_end();
+
 #endregion
 
 #region Global Variables
